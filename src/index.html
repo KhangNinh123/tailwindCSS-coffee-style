@@ -3,46 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet">
+  <script src="./main.js"></script>
 </head>
 <body>
  <div id="root">
-<div class="content_wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
-    <header class="py-8 mx-10" > 
-        <nav class="flex flex-row justify-between items-center"> 
-            <div class="logo basis-2/6 text-center  text-xl font-semibold cursor-pointer">
+<div class="content_wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">    <header class="py-8 mx-10" >        <nav class="flex flex-row justify-between items-center">
+            <div class="logo basis-1/4 text-center text-xl font-semibold cursor-pointer">
                 CoffeeShop.
             </div>
-            <ul class="basis-3/6 flex flex-row items-center gap-8  justify-end text-center uppercase text-sm text-gray-500 font-medium-500">
+            <ul class="basis-1/2 hidden lg:flex flex-row items-center gap-8 justify-center uppercase text-sm text-gray-500 font-medium-500">
                 <li class="cursor-pointer py-1 hover:text-gray-800 transition-all duration-300">
                     <a href="#">Home</a>
                 </li>
-                <li>
+                <li class="cursor-pointer py-1 hover:text-gray-800 transition-all duration-300">
                     <a href="#">Our Products</a>
                 </li>
-                <li>
+                <li class="cursor-pointer py-1 hover:text-gray-800 transition-all duration-300">
                     <a href="#">Blog</a>
                 </li>
-                <li>
+                <li class="cursor-pointer py-1 hover:text-gray-800 transition-all duration-300">
                     <a href="#">About</a>
                 </li>
-                <li>
+                <li class="cursor-pointer py-1 hover:text-gray-800 transition-all duration-300">
                     <a href="#">Contact</a>
                 </li>
-                <li>
+                <li class="cursor-pointer py-1 hover:text-gray-800 transition-all duration-300">
                     <a href="#">Styleguide</a>
-                </li>
-            </ul>
-            <ul class="basis-1/6  flex justify-start text-center ml-16 text-sm font-medium text-gray-800" >
-                <li><a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ct-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                </svg>
-                <span class="mx-2">Cart</span>
-                <span class="text-xs text-center rounded-full bg-orange-600 px-1.5 text-white">10</span>
- 
-                </a></li>
-            </ul>
+                </li>            </ul>
+            <div class="basis-1/4 flex items-center justify-end">
+                <div class="flex items-center mr-4">
+                    <a href="#" class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                        <span class="mx-2 text-sm font-medium">Cart</span>
+                        <span class="text-xs text-center rounded-full bg-orange-600 px-1.5 text-white">10</span>
+                    </a>
+                </div>
+                <div class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </div>
+              
         </nav>
     </header>
     <main>
